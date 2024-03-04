@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marketplace FE
+## This is a boilerplate Marketplace FE for a creating Marketplace sites with Next.js and GraphQL.
 
-## Getting Started
+# If you have any questions please ask Andy Wilson
 
-First, run the development server:
+## Getting Started on a new project
 
+### Clone the repository
+
+You will need to checkout the release/production branch to get the latest stable version of the project.
+
+From there you will create develop-<project-name> branch to start working on your project. and also a release/<project-name> branch to deploy to production.
+
+From this point forwards you create branches off of the develop-<project-name> branch. prefixed like so: <project-name>/<feature-name>.
+
+If there are any updates to the marketplace api that are not project specific i.e. the catalogue api updates. then an update will be created from the develop branch.
+
+This will then be merged into the release/production branch when stable. From there, there will need to be a rebase done into the develop-<project-name> branch.
+
+## Getting Started on an existing project
+
+### Clone the repository
+
+Checkout the develop-<project-name> branch to get the latest stable version of the project.
+
+From there you will create a <project-name>/<feature-name> branch to start working on your project.
+
+Then follow the install instructions below
+
+## Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Run the following commands in the root directory of the project:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+$ bun install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Start the development server
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+$ bun dev
