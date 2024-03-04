@@ -61,10 +61,14 @@ export interface IFieldImage {
   url: string;
 }
 
+export type TField = IFieldImage[] | string | undefined;
+
 export interface IFields {
-  [key: string]: {
-    [key: string]: IFieldImage[] | string;
-  };
+  [key: string]:
+    | {
+        [key: string]: IFieldImage[] | string;
+      }
+    | undefined;
 }
 
 export interface IStripeSubscription {

@@ -20,6 +20,7 @@
     "prettier/prettier": "error",
     "new-cap": "off",
     "no-object-constructor": "off",
+    "sonar/function-return-type": "off",
     "import/no-unused-modules": ["error", { "missingExports": true, "unusedExports": true, "ignoreExports": ["app/**/page.tsx", "app/**/layout.tsx"] }],
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/prefer-function-type": "off",

@@ -1,13 +1,13 @@
 import isEmpty from "lodash.isempty";
 import { useCallback, useState } from "react";
 
-import type { IFields } from "@/utils/types";
+import type { IFields, TField } from "@/utils/types";
 
 const usePageFields = () => {
   const [fields, setFields] = useState<IFields>({});
 
   const getField = useCallback(
-    (field: string): string | undefined => {
+    (field: string): TField => {
       const [blockName, fieldName] = field.split(".");
 
       if (
@@ -18,15 +18,7 @@ const usePageFields = () => {
         return undefined;
       }
 
-      if (isEmpty(fields[blockName])) {
-        return undefined;
-      }
-
-      if (isEmpty(fields[blockName][fieldName])) {
-        return undefined;
-      }
-
-      return fields[blockName][fieldName];
+      return fields[blockName]?.[fieldName];
     },
     [fields],
   );
