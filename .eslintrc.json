@@ -26,6 +26,7 @@
     "@typescript-eslint/prefer-function-type": "off",
     "max-statements": "off",
     // These are required
+    "import/no-unused-modules": "warn",
     "putout/putout": "off",
     "readable-tailwind/multiline": ["error", { "printWidth": 100 }],
     "@typescript-eslint/prefer-readonly-parameter-types": ["error", {
