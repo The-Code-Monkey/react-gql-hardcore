@@ -9,8 +9,8 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
-    "@apollo/client": "3.9.8",
-    "@apollo/experimental-nextjs-app-support": "0.8.0",
+    "@apollo/client": "3.9.9",
+    "@apollo/experimental-nextjs-app-support": "0.9.1",
     "graphql": "16.8.1",
     "js-cookie": "3.0.5",
     "lodash.isempty": "4.4.0",
